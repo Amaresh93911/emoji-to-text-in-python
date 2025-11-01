@@ -1,0 +1,11 @@
+#Converting  emojis into text in Python can be done using the demoji module
+pip install demoji
+import demoji
+demoji.download_codes()
+
+#example 1
+import demoji
+text = "i am a former son 👨‍🎓.and my mother is housewife👩‍🍳"
+demoji.findall(text)
+#output
+{'👨\u200d🎓': 'man student', '👩\u200d🍳': 'woman cook'}
